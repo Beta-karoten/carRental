@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.AdminRentController">
+   <children>
+      <TableView fx:id="renttable" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="522.0">
+        <columns>
+          <TableColumn fx:id="rentid" prefWidth="75.0" text="ID wypożyczenia" />
+          <TableColumn fx:id="datefrom" prefWidth="75.0" text="Data wypożyczenia" />
+            <TableColumn fx:id="dateto" prefWidth="75.0" text="Data zwrotu" />
+            <TableColumn fx:id="note" prefWidth="75.0" text="Uwagi" />
+            <TableColumn fx:id="clientid" prefWidth="75.0" text="ID klienta" />
+            <TableColumn fx:id="carid" prefWidth="75.0" text="ID auta" />
+            <TableColumn fx:id="sum" prefWidth="75.0" text="Suma(w zł)" />
+        </columns>
+          <contextMenu>
+              <ContextMenu>
+                  <items>
+                      <MenuItem fx:id="deleteMenuItem" mnemonicParsing="false" onAction="#delete" text="Usun" />
+                  </items>
+              </ContextMenu>
+          </contextMenu>
+      </TableView>
+      <Button layoutX="265.0" layoutY="237.0" mnemonicParsing="false" onAction="#backToPanel" prefHeight="44.0" prefWidth="137.0" text="Powrót" />
+   </children>
+</AnchorPane>

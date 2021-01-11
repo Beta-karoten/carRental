@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="496.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.AdminClientController">
+   <children>
+      <TableView fx:id="clienttable" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="Fname" prefWidth="75.0" text="Imię" />
+          <TableColumn fx:id="Lname" prefWidth="75.0" text="Nazwisko" />
+            <TableColumn fx:id="PESEL" prefWidth="75.0" text="PESEL" />
+            <TableColumn fx:id="Phone" prefWidth="75.0" text="Numer telefonu" />
+            <TableColumn fx:id="DriveLic" prefWidth="75.0" text="Numer prawa jazdy" />
+            <TableColumn fx:id="login" prefWidth="75.0" text="Login" />
+        </columns>
+          <contextMenu>
+              <ContextMenu>
+                  <items>
+                      <MenuItem fx:id="deleteMenuItem" mnemonicParsing="false" onAction="#delete" text="Usun" />
+                  </items>
+              </ContextMenu>
+          </contextMenu>
+      </TableView>
+      <Label layoutX="45.0" layoutY="241.0" text="Imię:" />
+      <Label layoutX="44.0" layoutY="270.0" text="Nazwisko:" />
+      <Label layoutX="44.0" layoutY="301.0" text="PESEL:" />
+      <Label layoutX="44.0" layoutY="333.0" text="Numer telefonu:" />
+      <Label layoutX="44.0" layoutY="362.0" text="Numer prawa jazdy:" />
+      <TextField fx:id="Fnameadd" layoutX="161.0" layoutY="237.0" />
+      <TextField fx:id="Lnameadd" layoutX="161.0" layoutY="266.0" />
+      <TextField fx:id="peseladd" layoutX="161.0" layoutY="297.0" />
+      <TextField fx:id="phoneadd" layoutX="161.0" layoutY="329.0" />
+      <TextField fx:id="drivelicadd" layoutX="161.0" layoutY="358.0" />
+      <Button layoutX="320.0" layoutY="265.0" mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="54.0" text="Dodaj" />
+      <Button layoutX="320.0" layoutY="306.0" mnemonicParsing="false" onAction="#backToPanel" text="Powrót" />
+      <TextField fx:id="loginadd" layoutX="161.0" layoutY="391.0" />
+      <Label layoutX="44.0" layoutY="395.0" text="Login:" />
+      <Label layoutX="44.0" layoutY="428.0" text="Hasło:" />
+      <PasswordField fx:id="passwordadd" layoutX="161.0" layoutY="424.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="466.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.ClientCarController">
+   <children>
+      <TableView fx:id="cartable" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="603.0">
+        <columns>
+          <TableColumn fx:id="mark" prefWidth="75.0" text="Marka" />
+          <TableColumn fx:id="model" prefWidth="75.0" text="Model" />
+            <TableColumn fx:id="body" prefWidth="75.0" text="Nadwozie" />
+            <TableColumn fx:id="year" prefWidth="75.0" text="Rok produkcji" />
+            <TableColumn fx:id="engine" prefWidth="75.0" text="Pojemność" />
+            <TableColumn fx:id="mil" prefWidth="75.0" text="Przebieg" />
+            <TableColumn fx:id="city" prefWidth="75.0" text="Miasto" />
+            <TableColumn fx:id="day" prefWidth="75.0" text="Cena za dzień" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="datefrom" layoutX="113.0" layoutY="325.0" />
+      <Label layoutX="78.0" layoutY="329.0" text="Od:" />
+      <Label layoutX="78.0" layoutY="368.0" text="Do:" />
+      <DatePicker fx:id="dateto" layoutX="113.0" layoutY="364.0" />
+      <Button layoutX="345.0" layoutY="325.0" mnemonicParsing="false" onAction="#rent" prefHeight="26.0" prefWidth="208.0" text="Wypożycz" />
+      <Button layoutX="345.0" layoutY="364.0" mnemonicParsing="false" onAction="#backToPanel" prefHeight="26.0" prefWidth="208.0" text="Powrót" />
+      <Hyperlink layoutX="468.0" layoutY="241.0" onAction="#filtered" text="Flitruj" />
+      <Label layoutX="175.0" layoutY="218.0" text="Pojemność od:" />
+      <Label layoutX="175.0" layoutY="244.0" text="Rok produkcji od:" />
+      <Label layoutX="174.0" layoutY="271.0" text="Przebieg mniejszy niż:" />
+      <TextField fx:id="enginesize" layoutX="301.0" layoutY="214.0" />
+      <TextField fx:id="yearfil" layoutX="301.0" layoutY="240.0" />
+      <TextField fx:id="milefil" layoutX="301.0" layoutY="267.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.PrimaryController">
+   <children>
+      <Label layoutX="133.0" layoutY="32.0" text="Panel Administratora">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="180.0" layoutY="407.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="239.0" text="Wyloguj" />
+      <Button layoutX="180.0" layoutY="95.0" mnemonicParsing="false" onAction="#switchToCar" prefHeight="50.0" prefWidth="239.0" text="Auta" />
+      <Button layoutX="180.0" layoutY="155.0" mnemonicParsing="false" onAction="#switchToRent" prefHeight="50.0" prefWidth="239.0" text="Wypożyczenia" />
+      <Button layoutX="180.0" layoutY="217.0" mnemonicParsing="false" onAction="#switchToClient" prefHeight="50.0" prefWidth="239.0" text="Klienci" />
+      <Button layoutX="180.0" layoutY="281.0" mnemonicParsing="false" onAction="#switchToOffice" prefHeight="50.0" prefWidth="239.0" text="Biura" />
+      <Button layoutX="180.0" layoutY="344.0" mnemonicParsing="false" onAction="#switchToPrice" prefHeight="50.0" prefWidth="239.0" text="Cennik" />
+   </children>
+</AnchorPane>

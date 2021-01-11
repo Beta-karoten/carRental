@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Clientcontroller">
+   <children>
+      <Label layoutX="183.0" layoutY="14.0" text="Panel Klienta">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <Button layoutX="166.0" layoutY="279.0" mnemonicParsing="false" onAction="#logOut" prefHeight="54.0" prefWidth="267.0" text="Wyloguj" />
+      <Button layoutX="166.0" layoutY="80.0" mnemonicParsing="false" onAction="#switchToNewRent" prefHeight="54.0" prefWidth="267.0" text="Wypożycz auto" />
+      <Button layoutX="166.0" layoutY="145.0" mnemonicParsing="false" onAction="#switchToMyRent" prefHeight="54.0" prefWidth="267.0" text="Moje wypożyczenia" />
+      <Button layoutX="166.0" layoutY="212.0" mnemonicParsing="false" onAction="#switchToAccount" prefHeight="54.0" prefWidth="267.0" text="Opcje konta" />
+   </children>
+</AnchorPane>

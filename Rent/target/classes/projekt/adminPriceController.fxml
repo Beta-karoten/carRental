@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="227.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.AdminPriceController">
+   <children>
+      <TableView fx:id="pricetable" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="228.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="day" prefWidth="75.0" text="Za dzień" />
+            <TableColumn fx:id="engine" prefWidth="75.0" text="Do pojemności" />
+        </columns>
+          <contextMenu>
+              <ContextMenu>
+                  <items>
+                      <MenuItem fx:id="deleteMenuItem" mnemonicParsing="false" onAction="#delete" text="Usun" />
+                  </items>
+              </ContextMenu>
+          </contextMenu>
+      </TableView>
+      <Label layoutX="253.0" layoutY="30.0" text="Za dzień:" />
+      <Label layoutX="253.0" layoutY="71.0" text="Do pojemności:" />
+      <TextField fx:id="dayadd" layoutX="345.0" layoutY="26.0" />
+      <TextField fx:id="engineadd" layoutX="345.0" layoutY="67.0" />
+      <Button layoutX="259.0" layoutY="148.0" mnemonicParsing="false" onAction="#add" prefHeight="54.0" prefWidth="103.0" text="Dodaj" />
+      <Button layoutX="390.0" layoutY="148.0" mnemonicParsing="false" onAction="#backToPanel" prefHeight="54.0" prefWidth="103.0" text="Powrót" />
+   </children>
+</AnchorPane>
